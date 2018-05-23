@@ -1,0 +1,25 @@
+/* CSS for Screened Devices 
+
+1. Mobile First CSS
+
+2. General Rules that apply to all devices
+
+3. Write large(r) CSS using media queries
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* 1. Mobile First Rules */
+
+
+/* 2. General Rules that apply to all devices */
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: sansita, sans-serif;
+}
+
+
+/* 3. Write large(r) CSS using media queries */

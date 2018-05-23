@@ -5,14 +5,17 @@
         <title>Franklin, ID | Weather Site</title>
         <meta name="description" content="Current weather conditions in Franklin, ID">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="/weather/css/weather.css" media="screen">
     </head>
     <body>
-        <header>
+        <header id="page-header">
             <h1>&#9748; The Weather Site</h1>
-            <h2>Franklin, ID</h2>
-            <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
         </header>
-        <nav>
+        <section>
+            <header><h2>Franklin, ID</h2></header>
+            <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
+        </section>
+        <nav id="page-nav">
             <ul>
                 <li><a href="/index.html" title="Go to homepage">Home</a></li>
                 <li><a href="#" title="go to current temperature">Current</a></li>
@@ -22,7 +25,7 @@
             </ul>
         </nav>
         <main>
-            <section>
+            <section id="temp">
                 <header>
                     <h2>Temperature</h2>
                 </header>
@@ -31,25 +34,25 @@
                 <p>41F</p>
                 <p>Feels Like 53F</p>
             </section>
-            <section>
+            <section id="wind">
                 <header>
                     <h2>Wind</h2>
                 </header>
                 <p><b>Direction: </b> SW</p>
                 <p><b>Gusts: </b>5 mph</p>
             </section>
-            <section>
+            <section id="summary">
                 <header>
                     <h2>Rain</h2>
                 </header>
             </section>
-            <section>
+            <section id="hourly">
                 <header>
                     <h3>Hourly Forecast</h3>
                 </header>
                 <p>12am: 41F | 1am: 41F | 2am: 41F | 3am: 41F | 4am: 41F | 5am: 41F | 6am: 42F | 7am: 44F | 8am: 44F | 9am: 46F | 10am: 49F | 11am: 51F | 12pm: 55F | 1pm: 58F | 2pm: 62F | 3pm: 64F | 4pm: 64F | 5pm: 62F | 6pm: 61F | 7pm: 60F | 8pm: 59F | 9pm: 58F | 10pm: 52F | 11pm: 48F |</p>
             </section>
         </main>
-        <footer>&copy;2018 Weather Site</footer>
+        <footer id="page-footer">&copy;2018 Weather Site</footer>
     </body>
 </html>
