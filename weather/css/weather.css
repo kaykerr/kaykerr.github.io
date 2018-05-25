@@ -1,15 +1,27 @@
 /* CSS for Screened Devices 
+Created by Kaylie Kerr
 
-1. Mobile First CSS
+Table of Contents
+1. Fonts and supplementary style sheets
+1.1 Normalize
+1.2 Google fonts
 
 2. General Rules that apply to all devices
 
-3. Write large(r) CSS using media queries
+3. Mobile first (specific to small devices)
+
+4. Large screen styles (media queries)
+
 */
 
-@import url('https://fonts.googleapis.com/css?family=Sansita');
 
-/* 1. Mobile First Rules */
+
+/* 1. Fonts and supplementary style sheets */
+/* 1.1 Normalize */
+@import url('normalize.css');
+
+/* 1.2 Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 
 
 /* 2. General Rules that apply to all devices */
@@ -22,4 +34,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-/* 3. Write large(r) CSS using media queries */
+/* 3. Mobile first (specific to small devices) */
+
+
+/* 4. Large screen styles (media queries) */
