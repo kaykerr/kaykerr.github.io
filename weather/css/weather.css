@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6{
 .site-brand {
     font-size: 2em;
     font-weight: 600;
+    font-style: italic;
   }
 
 nav ul li { 
@@ -62,6 +63,9 @@ nav ul li {
     font-size: .8em;
   }
 
+a{
+    text-decoration: none;
+}  
   #img-sum{
       max-width: 200px;
   }
@@ -88,6 +92,15 @@ nav ul li {
   #lo{
       color: blue;
   }
+
+  #wind p{
+      font-size: .6em;
+      line-height: 5px;
+  }
+
+  img{
+      margin-top: .5em;
+  }
 /* 3. Mobile first (specific to small devices) */
 
 nav {
@@ -96,10 +109,11 @@ nav {
     left: 0;
     background-color: white;
     border: 1px solid;
+    width: 100%;
   }
 
   footer{
-    margin-bottom: 2em;
+    margin-bottom: 5em;
    }
 
    .tile header {
