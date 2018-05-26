@@ -12,7 +12,6 @@
             <p class="site-brand">&#9748; The Weather Site</p>
             <nav id="page-nav">
             <ul>
-                <li><a href="/index.html" title="Go to homepage">Home</a></li>
                 <li><a href="#" title="go to current temperature">Current</a></li>
                 <li><a href="#" title="Search for new location">Search</a></li>
                 <li><a href="#" title="go to Franklin, Idaho's weather info">Franklin, ID</a></li>
@@ -21,17 +20,19 @@
         </nav>
         </header>
         <main>
-            <section>
-                <header><h1 id="loc-name">Franklin, ID</h2></header>
+            <section ="loc-name">
+                <h1>Franklin, Idaho</h1>
+            </section>
+            <section id="loc-info">
                 <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
             </section>
             <section id="temp" class="tile">
                 <header>
                     <h2>Temperature</h2>
                 </header>
-                <p>55&#8457;</p>
-                <p>64F</p>
-                <p>41F</p>
+                <p id="current">55&#8457;</p>
+                <p id="hi">64F</p>
+                <p id="lo">41F</p>
                 <p>Feels Like 53F</p>
             </section>
             <section id="wind" class="tile">
@@ -45,6 +46,7 @@
                 <header>
                     <h2>Rain</h2>
                 </header>
+                <img id="img-sum" src="/weather/images/placeholder/rain.svg" alt="rain cloud">
             </section>
             <section id="hourly">
                 <header>

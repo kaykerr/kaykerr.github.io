@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6{
     margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
+    max-width: 60%;
+    text-align: center;
 }
 
 .site-brand {
@@ -56,18 +58,55 @@ h1, h2, h3, h4, h5, h6{
 
 nav ul li { 
     display: inline-block; 
-    list-style: none; 
+    list-style: none;
+    font-size: .8em;
   }
 
+  #img-sum{
+      max-width: 200px;
+  }
+
+  #loc-info{
+      font-size: .6em;
+  }
+
+  #current{
+      font-size: 4.2em;
+      margin-bottom: .1em;
+      margin-top: .2em;
+  }
+
+  #hi, #lo{
+      display: inline;
+      padding: 5px;
+  }
+
+  #hi{
+      color: red;
+  }
+
+  #lo{
+      color: blue;
+  }
 /* 3. Mobile first (specific to small devices) */
 
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: white;
+    border: 1px solid;
   }
 
   footer{
     margin-bottom: 2em;
+   }
+
+   .tile header {
+       display: none;
+   }
+
+   #hourly{
+       display: none;
    }
 /* 4. Large screen styles (media queries) */
