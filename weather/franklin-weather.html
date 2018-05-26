@@ -10,12 +10,7 @@
     <body>
         <header id="page-header">
             <h1>&#9748; The Weather Site</h1>
-        </header>
-        <section>
-            <header><h2>Franklin, ID</h2></header>
-            <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
-        </section>
-        <nav id="page-nav">
+            <nav id="page-nav">
             <ul>
                 <li><a href="/index.html" title="Go to homepage">Home</a></li>
                 <li><a href="#" title="go to current temperature">Current</a></li>
@@ -24,8 +19,13 @@
                 <li><a href="#" title="go to Greenville, South Carolina's weather info">Greenville, SC</a></li>
             </ul>
         </nav>
+        </header>
         <main>
-            <section id="temp">
+            <section>
+                <header><h2 id="loc-name">Franklin, ID</h2></header>
+                <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
+            </section>
+            <section id="temp" class="tile">
                 <header>
                     <h2>Temperature</h2>
                 </header>
@@ -34,14 +34,14 @@
                 <p>41F</p>
                 <p>Feels Like 53F</p>
             </section>
-            <section id="wind">
+            <section id="wind" class="tile">
                 <header>
                     <h2>Wind</h2>
                 </header>
                 <p><b>Direction: </b> SW</p>
                 <p><b>Gusts: </b>5 mph</p>
             </section>
-            <section id="summary">
+            <section id="summary" class="tile">
                 <header>
                     <h2>Rain</h2>
                 </header>
