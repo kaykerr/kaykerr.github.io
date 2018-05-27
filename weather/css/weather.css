@@ -51,10 +51,15 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
+  #page-header p{
+      font-size: 2em;
+      font-weight: 600;
+      display: inline;
+  }
+
 .site-brand {
-    font-size: 2em;
-    font-weight: 600;
     font-style: italic;
+    display: inline;
   }
 
 nav ul li { 
@@ -110,6 +115,7 @@ nav {
     background-color: white;
     border: 1px solid;
     width: 100%;
+    height: 50px;
   }
 
   footer{
