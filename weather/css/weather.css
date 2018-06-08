@@ -94,7 +94,7 @@ nav li a{
 }
 
   #loc-info{
-      font-size: .6em;
+      font-size: .57em;
       margin: 20px;
   }
 
@@ -107,6 +107,11 @@ nav li a{
   #hi, #lo{
       display: inline;
       padding: 5px;
+      margin: 0;
+  }
+
+  #feels{
+      margin: 0;
   }
 
   #hi{
@@ -125,6 +130,31 @@ nav li a{
   img{
       margin-top: .5em;
   }
+
+  #hourly{
+    background-color:  white;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#hourly ul{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items: center;
+    list-style: none;
+    padding: .15em;
+    margin: .25em 0;
+    height: 40px;
+}
+
+#hourly ul li{
+    flex: 0 0 auto;
+    padding: 0 .25em;
+}
+
+/* //////////////////////////////////////////////////////// */
+
 /* 3. Mobile first (specific to small devices) */
 
 nav {
@@ -144,16 +174,21 @@ nav {
        display: none;
    }
 
-   #hourly{
-       display: none;
-   }
+#hourly{
+    width: 72%;
+    margin: .7em auto;
+}
+
 /* 4. Large screen styles (media queries) */
 
 @media only screen AND (min-width: 768px){
 
     #page-nav {
         position: relative;
+        width: 80%;
+        margin: 15px 45px;
     }
+
     .tile-container{
         display: flex;
         flex-direction: row;
@@ -169,6 +204,32 @@ nav {
     }
 
     #hourly{
-        display: flex;
+        width: 93%;
+        margin: auto;
     }
+
+    .loc-name{
+        margin: 5px 0 0 45px;
+    }
+    
+      #loc-info{
+          margin: 5px 0 0 50px;
+      }
+
+      #page-header p{
+        margin: 15px 0 0 45px;
+    }
+
+    #hourly h3{
+        margin: 10px 15px;
+    }
+
+    #hourly ul{
+        margin: 5px 10px;
+    }
+
+    footer{
+        margin: 30px 0 5em 45px;
+    }
+
 }
