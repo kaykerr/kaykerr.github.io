@@ -78,11 +78,15 @@ nav li a{
       font-size: 1.3em;
       font-weight: 600;
       display: inline-block;
-      margin: 15px 0 0 15px;
+  }
+
+#site-logo{
+    margin: 15px 0 0 15px;
   }
 
 .site-brand {
     font-style: italic;
+    margin: 15px 0 0 10px;
     }
 
   #img-sum{
@@ -111,7 +115,7 @@ nav li a{
   }
 
   #feels{
-      margin: 0;
+      margin: 4px auto 30px auto;
   }
 
   #hi{
@@ -153,6 +157,12 @@ nav li a{
     padding: 0 .25em;
 }
 
+#summary h2{
+    margin-bottom: 0;
+}
+
+
+
 /* //////////////////////////////////////////////////////// */
 
 /* 3. Mobile first (specific to small devices) */
@@ -170,13 +180,29 @@ nav {
     margin-bottom: 5em;
    }
 
-   .tile header {
+   #temp header {
        display: none;
    }
+
+   #wind header {
+    display: none;
+}
 
 #hourly{
     width: 72%;
     margin: .7em auto;
+}
+
+#hourly h3{
+    margin: 10px 15px;
+}
+
+#hourly ul{
+    margin: 5px 10px;
+}
+
+footer{
+    margin: 30px 0 3em 15px;
 }
 
 /* 4. Large screen styles (media queries) */
@@ -189,6 +215,18 @@ nav {
         margin: 15px 45px;
     }
 
+    nav ul{
+        justify-content: flex-start;
+    }
+
+    nav li{
+        padding: 15px;
+    }
+
+    #franklin-link{
+        border-left: 1px solid;
+    }
+
     .tile-container{
         display: flex;
         flex-direction: row;
@@ -199,7 +237,11 @@ nav {
         width: 30%;
     }
 
-    .tile header{
+    #temp header{
+        display: inline;
+    }
+
+    #wind header{
         display: inline;
     }
 
@@ -216,20 +258,15 @@ nav {
           margin: 5px 0 0 50px;
       }
 
-      #page-header p{
+      #site-logo{
         margin: 15px 0 0 45px;
     }
 
-    #hourly h3{
-        margin: 10px 15px;
-    }
-
-    #hourly ul{
-        margin: 5px 10px;
+    .site-brand{
+        margin: 15px 0 0 10px;
     }
 
     footer{
         margin: 30px 0 5em 45px;
     }
-
 }
