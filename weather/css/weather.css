@@ -122,7 +122,7 @@ nav li a{
 
 /* 2.4 Location name and info /////////////// */
 
-.loc-name{
+#loc-name{
     margin: 5px 0 0 15px;
     }
 
@@ -281,7 +281,7 @@ footer{
 
 /* 4.2 Location name and info /////////////// */
 
-    .loc-name{
+    #loc-name{
         margin: 5px 0 0 45px;
         }
         
@@ -292,7 +292,7 @@ footer{
 
 /* 4.3 Nav Bar /////////////// */
 
-    #page-nav {
+    nav {
         position: relative;
         width: 80%;
         margin: 15px 45px;

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-us">
+
     <head>
         <meta charset="UTF-8">
         <title>Franklin, ID | Weather Site</title>
@@ -7,53 +8,64 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="/weather/css/weather.css" media="screen">
     </head>
+
     <body>
+
         <header id="page-header">
             <p id="site-logo">&#9748;</p>
             <p class="site-brand">The Weather Site</p>
         </header>
-            <nav id="page-nav">
+
+        <nav>
             <ul>
-                <li><a href="#" title="go to current temperature">Current</a></li>
+                <li><a href="#" title="go to current local temperature">Current</a></li>
                 <li><a href="#" title="Search for new location">Search</a></li>
-                <li id="franklin-link"><a href="#" title="go to Franklin, Idaho's weather info">Franklin, ID</a></li>
-                <li><a href="#" title="go to Greenville, South Carolina's weather info">Greenville, SC</a></li>
+                <li id="franklin-link"><a href="/weather/franklin-weather.html" title="go to Franklin, Idaho's weather info">Franklin, ID</a></li>
+                <li><a href="/weather/greenville-weather.html" title="go to Greenville, South Carolina's weather info">Greenville, SC</a></li>
             </ul>
         </nav>
         
         <main>
             <section>
-                <h1 class="loc-name">Franklin, Idaho</h1>
+                <h1 id="loc-name">Franklin, Idaho</h1>
             </section>
+
             <section id="loc-info">
                 <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
             </section>
+
+
             <div class="tile-container">
                 <section id="temp" class="tile">
                 <header>
                     <h2>Temperature</h2>
                 </header>
-                <p id="current">55&#8457;</p>
-                <p id="hi">64F</p>
-                <p id="lo">41F</p>
-                <p id="feels">Feels Like 53F</p>
-            </section>
-            <section id="wind" class="tile">
+                    <p id="current">55&#8457;</p>
+                    <p id="hi">64F</p>
+                    <p id="lo">41F</p>
+                    <p id="feels">Feels Like 53F</p>
+                </section>
+
+                <section id="wind" class="tile">
                 <header>
                     <h2>Wind</h2>
                 </header>
-                <img src="/weather/images/placeholder/wind.png" alt="wind direction placeholder">
-                <p><b>Direction: </b> SW</p>
-                <p><b>Gusts: </b>5 mph</p>
-            </section>
-            <section id="summary" class="tile">
-                <header>
-                    <h2>Rain</h2>
+                    <img src="/weather/images/placeholder/wind.png" alt="wind direction placeholder">
+                    <p><b>Direction: </b> SW</p>
+                    <p><b>Gusts: </b>5 mph</p>
+                </section>
+
+                <section id="summary" class="tile">
+                 <header>
+                     <h2>Rain</h2>
                 </header>
-                <img id="img-sum" src="/weather/images/placeholder/rain.svg" alt="rain cloud summary placeholder">
-                <p><b>Precipitation: </b> 0</p>
-            </section>
+                    <img id="img-sum" src="/weather/images/placeholder/rain.svg" alt="rain cloud summary placeholder">
+                    <p><b>Precipitation: </b> 0</p>
+                </section>
+
             </div>
+
+
             <section id="hourly">
                 <h3>Hourly Forecast</h3>
                 <ul>
@@ -84,6 +96,9 @@
                 </ul>
             </section>
         </main>
-        <footer id="page-footer">&copy;2018 Weather Site</footer>
+
+        <footer>&copy;2018 Weather Site</footer>  
+
     </body>
+
 </html>
