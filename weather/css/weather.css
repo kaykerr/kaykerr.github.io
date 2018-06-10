@@ -180,6 +180,13 @@ nav li a{
     margin-bottom: 0;
     }
 
+#summary p{
+    font-size: .6em;
+    line-height: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 
 /* 2.6 Hourly Forecast /////////////// */
 
