@@ -187,17 +187,18 @@ nav li a{
     margin-bottom: 20px;
 }
 
-#wind{
-    background-image: url(/weather/images/weather-images/wind-pointer.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 40%;
+#dial{
+    width: 150px;
+    height: 150px;
+    background: no-repeat center/85% url(/weather/images/weather-images/wind-pointer.png);
+    z-index: 100;
+    margin: -.6em auto 0;    
 }
 
-#mph{
-    margin-top: 80px;
-    margin-bottom: 85px;
+#wind-info{
+    position: absolute;
 }
+
 
 
 /* 2.6 Hourly Forecast /////////////// */
@@ -342,6 +343,11 @@ footer{
     #wind header{
         display: inline;
         }
+
+    #wind-info{
+        top: 47%;
+        right: 48%;
+    }
 
 
 /* 4.5 Hourly Forecast /////////////// */
