@@ -1,0 +1,32 @@
+.large{
+    display: none;
+}
+
+.small{
+    display: block;
+    margin-bottom: 80px;
+}
+
+img{
+    width: 100%;
+}
+
+nav{
+    margin-bottom: 50px;
+}
+
+@media only screen AND (min-width: 768px){
+
+    .large{
+        display: block;
+        margin-bottom: 80px;
+    }
+    
+    .small{
+        display: none;
+    }
+
+    img{
+        width: 95%;
+    }
+}
