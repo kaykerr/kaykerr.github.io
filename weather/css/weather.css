@@ -187,6 +187,13 @@ nav li a{
     margin-bottom: 20px;
 }
 
+#wind{
+    background-image: url(/weather/images/weather-images/wind-pointer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
 
 /* 2.6 Hourly Forecast /////////////// */
 
