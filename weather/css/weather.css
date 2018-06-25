@@ -134,6 +134,10 @@ nav li a{
 
 /* 2.5 Tiles /////////////// */
 
+.tile-container {
+    background-size: cover;
+   }
+
 .tile-container{
     margin: 25px;
     }
@@ -190,13 +194,16 @@ nav li a{
 #dial{
     width: 150px;
     height: 150px;
+    max-width: 50%;
     background: no-repeat center/85% url(/weather/images/weather-images/wind-pointer.png);
     z-index: 100;
-    margin: -.6em auto 0;    
+    margin: -.6em auto -112px;    
 }
 
 #wind-info{
-    position: absolute;
+    position: relative;
+    top: -41%;
+    margin-bottom: 3.5em;
 }
 
 
@@ -223,6 +230,47 @@ nav li a{
     flex: 0 0 auto;
     padding: 0 .25em;
     }
+
+
+
+
+
+/* 2.7 Dial /////////////// */
+
+.n {
+    transform: rotate(0deg);
+}
+
+.e {
+    transform: rotate(90deg);
+}
+
+.s {
+    transform: rotate(180deg);
+}
+
+.w {
+    transform: rotate(270deg);
+}
+
+.ne {
+    transform: rotate(45deg);
+}
+
+.se {
+    transform: rotate(135deg);
+}
+
+.sw {
+    transform: rotate(225deg);
+}
+
+.nw {
+    transform: rotate(315deg);
+}
+
+
+
 
 
 
@@ -273,6 +321,28 @@ footer{
     margin: 30px 0 3em 15px;
     }
 
+
+/* 3.5 Background pictures for summary */
+
+.clear {
+    background-image: url("/weather/images/resized/clear.jpg");
+   }
+
+.cloudy {
+    background-image: url("/weather/images/resized/clouds.jpg");
+   }
+
+.fog {
+    background-image: url("/weather/images/resized/fog.jpg");
+   }
+
+.rain {
+    background-image: url("/weather/images/resized/rain.jpg");
+   }
+
+.snow {
+    background-image: url("/weather/images/resized/snow.jpg");
+   }
 
 
 /* /////////////////////////////////////////////////////////////////////// */
@@ -344,9 +414,13 @@ footer{
         display: inline;
         }
 
+    #dial{
+        margin: -.6em auto 35px;
+        max-width: 100%;
+    }
+
     #wind-info{
-        top: 47%;
-        right: 48%;
+        margin-bottom: -2.5em;
     }
 
 
@@ -365,6 +439,29 @@ footer{
         }
 
     }
+
+
+/* 3.5 Background pictures for summary */
+
+.clear {
+    background-image: url("/weather/images/resized/clear-large.jpg");
+   }
+
+.cloudy {
+    background-image: url("/weather/images/resized/clouds-large.jpg");
+   }
+
+.fog {
+    background-image: url("/weather/images/resized/fog-large.jpg");
+   }
+
+.rain {
+    background-image: url("/weather/images/resized/rain-large.jpg");
+   }
+
+.snow {
+    background-image: url("/weather/images/resized/snow-large.jpg");
+   }
 
 
 /* /////////////////////////////////////////////////////////////////////// */
