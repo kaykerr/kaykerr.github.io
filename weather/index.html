@@ -3,11 +3,13 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Franklin, ID | Weather Site</title>
-        <meta name="description" content="Current weather conditions in Franklin, ID">
+        <title>Current Weather | Weather Site</title>
+        <meta name="description" content="Current weather conditions in current location">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="/weather/css/weather.css" media="screen">
     </head>
+
+<!-- Kaylie Kerr,  Casey Streeter -->
 
     <body>
 
@@ -18,12 +20,13 @@
 
         <nav>
             <ul>
-                <li><a href="#" title="go to current local temperature">Current</a></li>
+                <li><a href="/weather/index.html" title="go to current local temperature">Current</a></li>
                 <li><a href="#" title="Search for new location">Search</a></li>
                 <li id="franklin-link"><a href="/weather/franklin-weather.html" title="go to Franklin, Idaho's weather info">Franklin, ID</a></li>
                 <li><a href="/weather/greenville-weather.html" title="go to Greenville, South Carolina's weather info">Greenville, SC</a></li>
             </ul>
         </nav>
+        <p id="status" class="hide"></p>
         
         <main>
             <section>
@@ -31,7 +34,7 @@
             </section>
 
             <section id="loc-info">
-                <p><b>Zip: </b>83237 | <b>Elevation: </b>4968 ft. | <b>Location: </b>42.07, 111.79</p>
+                <p><b>Zip: </b><span id="zip">83237</span> | <b>Elevation: </b><span id="elevation">4968 ft.</span> | <b>Location: </b><span id="location">42.07, 111.79</span></p>
             </section>
 
 
@@ -53,13 +56,13 @@
                 <p class="north">N</p> 
                 <div id="dial" class="w"></div>
                     <div id="wind-info"><h3>5 mph</h3></div>
-                    <p><b>Direction: </b> SW</p>
-                    <p><b>Gusts: </b>5 mph</p>
+                    <p><b>Direction: </b><span id="wd">SW</span></p>
+                    <p><b>Gusts: </b><span id="wg">5 mph</span></p>
                 </section>
 
                 <section id="summary" class="tile">
                  <header>
-                     <h2>Rain</h2>
+                     <h2 id="summary-title">Rain</h2>
                 </header>
                     <img id="img-sum" src="/weather/images/weather-images/video.png" alt="video summary placeholder">
                     <p><b>Precipitation: </b> 0</p>
@@ -99,11 +102,15 @@
             </section>
         </main>
 
-        <footer>&copy;2018 Weather Site</footer>  
+        <footer>
+            <p>&copy;2018 Weather Site</p>
+            <img id="footer-image" src="/weather/images/weather-images/AW_Black_Small.png" alt="AccuWeather Logo">
+        </footer>  
 
 <!-- weather site javascript functions -->
 
         <script src="/weather/javascript/functions.js"></script>
+        <script src="/weather/javascript/geo_loc.js"></script>
 
     </body>
 

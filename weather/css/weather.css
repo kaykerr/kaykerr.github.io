@@ -80,6 +80,10 @@ img{
      max-width: 200px;
     }
 
+.hide{
+    display: none;
+    }
+
 
 /* 2.2 Site Name /////////////// */
 
@@ -97,6 +101,10 @@ img{
   font-style: italic;
   margin: 15px 0 0 10px;
   }
+
+#footer-image {
+    width: 8%;
+}
 
 
 /* 2.3 Nav bar /////////////// */
@@ -134,11 +142,15 @@ nav li a{
 
 /* 2.5 Tiles /////////////// */
 
-.tile-container {
+#tile-container {
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    }
 
-.tile-container{
+#tile-container{
     margin: 25px;
     }
 
@@ -194,7 +206,6 @@ nav li a{
 #dial{
     width: 150px;
     height: 150px;
-    max-width: 50%;
     background: no-repeat center/85% url(/weather/images/weather-images/wind-pointer.png);
     z-index: 100;
     margin: -.6em auto -112px;    
@@ -202,7 +213,6 @@ nav li a{
 
 #wind-info{
     position: relative;
-    top: -41%;
     margin-bottom: 3.5em;
 }
 
@@ -396,7 +406,7 @@ footer{
 
 /* 4.4 Tiles /////////////// */
 
-    .tile-container{
+    #tile-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -421,6 +431,7 @@ footer{
 
     #wind-info{
         margin-bottom: -2.5em;
+        top: -41%;
     }
 
 
