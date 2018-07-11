@@ -1,0 +1,197 @@
+/* /////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* CSS for Screened Devices 
+Created by Kaylie Kerr
+
+Table of Contents
+1. Fonts and supplementary style sheets
+    1.1 Normalize
+    1.2 Google fonts
+
+2. General Rules that apply to all devices
+    2.1 Styles for the entire page
+    2.2 Site Name
+    2.3 Nav Bar
+
+3. Mobile first (specific to small devices)
+    3.1 Nav Bar
+
+4. Large screen styles (media queries)
+    4.1 Site Name
+    4.3 Nav Bar
+
+
+*/
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 1. Fonts and supplementary style sheets */
+/* 1.1 Normalize /////////////// */
+@import url('normalize.css');
+
+
+/* 1.2 Google fonts /////////////// */
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 2. General Rules that apply to all devices */
+/* 2.1 Styles for the entire page /////////////// */
+
+html{
+    box-sizing: border-box;
+    }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+    }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-image: url("/acme/images/site/background.jpg");
+    background-size: cover;
+    }
+
+#content-area{
+    background-color: white;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Acme',  sans-serif;
+    color: #2C2C2C;
+    /* text-transform: uppercase;
+    letter-spacing: .1em; */
+    }
+
+main{
+    display: flex;
+}
+
+.hide{
+    display: none;
+    }
+
+.show{
+    display: block;
+    }
+
+
+
+/* 2.3 Nav bar /////////////// */
+
+nav{
+    background-color: #de2226;
+}
+
+nav ul{
+    list-style: none;
+    font-size: .7em;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    }
+
+nav li{
+    padding: 5px 17px;
+    color: white;
+    font-size: 1.3em;
+    }
+
+nav li a{
+    text-decoration: none;
+    }
+
+
+footer{
+    border-top: 1px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: .6em;
+    color: gray;
+}
+
+#main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* 3. Mobile first (specific to small devices) */
+
+#site-logo{
+    margin: 15px 0 0 15px;
+    max-width: 90%;
+    }
+
+#content-area{
+    max-width: 90%;
+}   
+
+main{
+    margin: 0 15px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 4. Large screen styles (media queries) */
+
+@media only screen AND (min-width: 768px){
+
+/* 4.1 Site Name /////////////// */
+
+    #site-logo{
+        margin: 15px 0 0 45px;
+        max-width: 100%;
+        }
+
+    .site-brand{
+        margin: 15px 0 0 10px;
+        }
+
+
+    #content-area{
+        max-width: 80%;
+        } 
+
+
+    main{
+        margin: 0 45px;
+        }    
+
+
+/* 4.3 Nav Bar /////////////// */
+
+    nav {
+        position: relative;
+        /* width: 80%; */
+        margin: 15px 0;
+        }
+
+    nav ul{
+        justify-content: flex-start;
+        }
+
+    nav li{
+        padding: 15px 0px 15px 45px
+        }
+
+    /* #main-content{
+        display: flex;
+        flex-wrap: wrap;
+        } */
+    }
