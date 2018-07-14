@@ -67,12 +67,24 @@ body{
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h3, h4, h5, h6{
     font-family: 'Acme',  sans-serif;
     color: #2C2C2C;
     /* text-transform: uppercase;
     letter-spacing: .1em; */
     }
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2.3em;
+}
+
+h3{
+    font-size: 1.7em;
+}
 
 main{
     display: flex;
@@ -105,7 +117,7 @@ nav ul{
     flex-wrap: wrap;
     }
 
-nav li{
+nav a{
     padding: 5px 17px;
     color: white;
     font-size: 1.3em;
@@ -129,6 +141,76 @@ footer{
     flex-wrap: wrap;
 }
 
+#rocket-img{
+    background-image: url(/acme/images/site/feature.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#home{
+    width: 100%;
+}
+
+#rocket-feat{
+    margin-right: 10%;
+}
+
+#rocket-feat li{
+    list-style: none;
+    color: #990033;
+}
+
+#rocket-feat h2{
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 8px;
+}
+
+#actionbtn {
+    margin-top: 20px;
+}
+
+#bottom-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#rocket-reviews{
+    margin-left: 10%;
+}
+
+#prod-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#prod-desc{
+    margin-left: 5%;
+}
+
+#prod-img{
+    width: 150%;
+    height: 150%;
+    margin-bottom: 7%;
+}
+
+#description{
+    margin-top: 0;
+}
+
+#price{
+    font-size: 1.5em;
+    color: #de2226;
+    font-weight: 700;
+    line-height: 3em;
+}
+
+.no-space{
+    margin: 5px 0;
+}
 
 /* 3. Mobile first (specific to small devices) */
 
