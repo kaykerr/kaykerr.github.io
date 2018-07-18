@@ -52,6 +52,7 @@ function getData(key) {
     const manufacturer = document.getElementById("manufacturer");
     let price = document.getElementById("price");
     let reviews = document.getElementById("reviews");
+    let title = document.getElementById("page-title");
 
     if (key == 'Home') {
         product.setAttribute("class", "hide");
@@ -73,6 +74,7 @@ function getData(key) {
         
         price.innerHTML ="Price: $" + data1[key]["price"];
         reviews.innerHTML = data1[key]["reviews"];
+        title.innerHTML = data1[key]["name"] + " | Acme"
         
     }
 

@@ -11,15 +11,25 @@ Table of Contents
 
 2. General Rules that apply to all devices
     2.1 Styles for the entire page
-    2.2 Site Name
+    2.2 Backgrounds
     2.3 Nav Bar
+    2.4 Content Areas
 
 3. Mobile first (specific to small devices)
-    3.1 Nav Bar
+    3.1 General Mobile Styles
+    3.2 Rocket Feature
+    3.3 Bottom of Home Content
+    3.4 Product Pages
 
-4. Large screen styles (media queries)
-    4.1 Site Name
-    4.3 Nav Bar
+4. Medium screen styles (media queries)
+    4.1 Rocket Feature
+    4.2 Product Pages
+
+5. Large Screen screen styles (media queries)
+    5.1 General Large Styles
+    5.2 Nav Bar
+    5.3 Rocket Feature
+    5.4 Bottom of Home Content
 
 
 */
@@ -29,11 +39,11 @@ Table of Contents
 
 
 
-/* /////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* 1. Fonts and supplementary style sheets */
 /* 1.1 Normalize /////////////// */
-@import url('normalize.css');
+@import url('/weather/css/normalize.css');
 
 
 /* 1.2 Google fonts /////////////// */
@@ -42,7 +52,7 @@ Table of Contents
 
 
 
-/* /////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* 2. General Rules that apply to all devices */
 /* 2.1 Styles for the entire page /////////////// */
@@ -54,18 +64,6 @@ html{
    *, *:before, *:after{
     box-sizing: inherit;
     }
-
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    background-image: url("/acme/images/site/background.jpg");
-    background-size: cover;
-    }
-
-#content-area{
-    background-color: white;
-    margin: 0 auto;
-}
 
 h1, h3, h4, h5, h6{
     font-family: 'Acme',  sans-serif;
@@ -99,6 +97,21 @@ main{
     }
 
 
+/* 2.2 Backgrounds /////////////// */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-image: url("/acme/images/site/background.jpg");
+    background-size: cover;
+    }
+
+#content-area{
+    background-color: white;
+    margin: 0 auto;
+}
+
+
 
 /* 2.3 Nav bar /////////////// */
 
@@ -118,44 +131,20 @@ nav ul{
     }
 
 nav a{
-    padding: 5px 17px;
     color: white;
     font-size: 1.3em;
     }
 
-nav li a{
+
+nav ul li a{
     text-decoration: none;
     }
 
 
-footer{
-    border-top: 1px solid;
-    padding: 20px;
-    text-align: center;
-    font-size: .6em;
-    color: gray;
-}
-
-#main-content{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#rocket-img{
-    background-image: url(/acme/images/site/feature.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row-reverse;
-}
+/* 2.4 Content Areas /////////////// */
 
 #home{
     width: 100%;
-}
-
-#rocket-feat{
-    margin-right: 10%;
 }
 
 #rocket-feat li{
@@ -172,31 +161,6 @@ footer{
     margin-top: 20px;
 }
 
-#bottom-content{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5%;
-}
-
-#rocket-reviews{
-    margin-left: 10%;
-}
-
-#prod-container{
-    display: flex;
-    flex-direction: row;
-}
-
-#prod-desc{
-    margin-left: 5%;
-}
-
-#prod-img{
-    width: 150%;
-    height: 150%;
-    margin-bottom: 7%;
-}
-
 #description{
     margin-top: 0;
 }
@@ -208,11 +172,44 @@ footer{
     line-height: 3em;
 }
 
+
+figure {
+    background-color: #CCCDC9;
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 168px;
+}
+
+figcaption{
+    background-color: white;
+    padding: 10px;
+    margin-top: -5px;
+}
+
 .no-space{
     margin: 5px 0;
 }
 
+footer{
+    border-top: 1px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: .6em;
+    color: gray;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
 /* 3. Mobile first (specific to small devices) */
+
+
+/* 3.1 General Mobile Styles /////////////// */
 
 #site-logo{
     margin: 15px 0 0 15px;
@@ -227,53 +224,199 @@ main{
     margin: 0 15px;
 }
 
+nav ul li{
+    padding: 15px 17px;
+}
 
-/* /////////////////////////////////////////////////////////////////////// */
 
-/* 4. Large screen styles (media queries) */
 
-@media only screen AND (min-width: 768px){
+/* 3.2 Rocket Feature /////////////// */
 
-/* 4.1 Site Name /////////////// */
+#rocket-img{
+    background-image: url(/acme/images/site/feature.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
+#rocket-feat{
+    padding: 8%;
+    background-color: rgba(300,300,300,.7);
+    margin: 0 auto;
+}
+
+
+/* 3.3 Bottom of Home Content /////////////// */
+
+#bottom-content{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5%;
+}
+
+#recipes{
+    margin-right: 0;
+}
+
+#recipe-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#rocket-reviews ul{
+    padding-left: 20px;
+}
+
+
+/* 3.4 Product Pages /////////////// */
+
+#prod-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#prod-desc{
+    margin-left: 0;
+}
+
+#prod-img{
+    width: 80%;
+    margin-bottom: 7%;
+    max-width: 250px;
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* 4. Medium screen styles (media queries) */
+
+@media only screen AND (min-width: 720px){
+
+
+/* 4.1 Rocket Feature /////////////// */
+
+#rocket-feat{
+    padding: 5%;
+    background-color: rgba(300,300,300,.7);
+    margin: 0;
+}
+
+
+/* 4.2 Product Pages /////////////// */
+    
+#prod-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#prod-desc{
+    margin-left: 5%;
+}
+
+#prod-img{
+    width: 90%;
+    height: 90%;
+    margin-bottom: 7%;
+}
+
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* 5. Large screen styles (media queries) */
+
+@media only screen AND (min-width: 1050px){
+
+    /* 5.1 General Large Styles /////////////// */
+    
     #site-logo{
         margin: 15px 0 0 45px;
         max-width: 100%;
         }
-
+    
     .site-brand{
         margin: 15px 0 0 10px;
         }
-
-
+    
+    
     #content-area{
         max-width: 80%;
         } 
-
-
+    
+    
     main{
         margin: 0 45px;
         }    
-
-
-/* 4.3 Nav Bar /////////////// */
-
+    
+    
+    
+    /* 5.2 Nav Bar /////////////// */
+    
     nav {
         position: relative;
         /* width: 80%; */
         margin: 15px 0;
         }
-
+    
     nav ul{
         justify-content: flex-start;
         }
-
-    nav li{
+    
+    nav ul li{
         padding: 15px 0px 15px 45px
         }
-
-    /* #main-content{
+    
+    
+    
+    /* 5.3 Rocket Feature /////////////// */
+    
+    #rocket-img{
+        background-image: url(/acme/images/site/feature.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 400px;
         display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    #rocket-feat{
+        margin: 30px 10% 0 0;
+        background: none;
+        padding: 0;
+    }
+    
+    
+    /* 5.4 Bottom of Home Content /////////////// */
+    
+    #bottom-content{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+    
+    #recipes{
+        width: 45%;
+    }
+    
+    #recipe-images{
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        } */
+    }
+    
+    
+    
+    
     }

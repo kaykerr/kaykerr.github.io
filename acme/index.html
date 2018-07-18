@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Current weather conditions in current location">
     <link rel="stylesheet" type="text/css" href="/acme/css/acme.css" media="screen">
-    <title>Page | Acme</title>
+    <title id="page-title">Home | Acme</title>
 </head>
 <body>
     <div id="content-area">
-    <header><img id="site-logo" src="/acme/images/site/logo.png"></header>
+    <header><img id="site-logo" src="/acme/images/site/logo.png" alt="Acme Logo"></header>
     <nav>
     <span id="nav-bar"></span>
         
@@ -31,10 +31,11 @@
         <div id="bottom-content">
             <div id="recipes">
             <h3>Featured Recipes</h3>
-            <img src="/acme/images/recipes/bbqsand.jpg">
-            <img src="/acme/images/recipes/potpie.jpg">
-            <img src="/acme/images/recipes/soup.jpg">
-            <img src="/acme/images/recipes/taco.jpg">
+            <div id="recipe-images">
+            <figure><img alt="BBQ Sandwich" src="/acme/images/recipes/bbqsand.jpg"><figcaption><a href="#" alt="recipe">Pulled Roadrunner BBQ</a></figcaption></figure>
+            <figure><img alt="pot pie" src="/acme/images/recipes/potpie.jpg"><figcaption><a href="#" alt="recipe">Roadrunner Pot Pie</a></figcaption></figure>
+            <figure><img alt="soup" src="/acme/images/recipes/soup.jpg"><figcaption><a href="#" alt="recipe">Roadrunner Soup</a></figcaption></figure>
+            <figure><img alt="taco" src="/acme/images/recipes/taco.jpg"><figcaption><a href="#" alt="recipe">Roadrunner Tacos</a></figcaption></figure></div>
             </div>
 
         <div id="rocket-reviews">
@@ -54,7 +55,7 @@
         <section id="product" class="hide">
             <h1 id="prod-name">All Purpose Trap</h1>
             <div id="prod-container">
-            <img id="prod-img" src="">
+            <img alt="image of product" id="prod-img" src="#">
             <div id="prod-desc"><p><span id="description">This all purpose trap comes in a variety of colors and sizes. Great for road runners, rabbits, mice and all other tasty morsels. Made of non-rusting metal alloy, it will last for years. You won't be disappointed.</span></p>
             <p class="no-space"><strong>Made by: </strong><span id="manufacturer">Placeholder Name</span></p>
             <p class="no-space"><strong>Reviews: </strong><span id="reviews">4.6/5 stars</span></p>
