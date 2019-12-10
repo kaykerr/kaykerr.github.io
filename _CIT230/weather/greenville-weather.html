@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Greenville, SC | Weather Site</title>
+        <meta name="description" content="Current weather conditions in Greenville, SC">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="/weather/css/weather.css" media="screen">
+    </head>
+
+    <body>
+
+        <header id="page-header">
+            <p id="site-logo">&#9748;</p>
+            <p class="site-brand">The Weather Site</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" title="go to current local temperature">Current</a></li>
+                <li><a href="#" title="Search for new location">Search</a></li>
+                <li id="franklin-link"><a href="/weather/franklin-weather.html" title="go to Franklin, Idaho's weather info">Franklin, ID</a></li>
+                <li><a href="/weather/greenville-weather.html" title="go to Greenville, South Carolina's weather info">Greenville, SC</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section>
+                <h1 id="loc-name">Greenville, South Carolina</h1>
+            </section>
+
+            <section id="loc-info">
+                <p><b>Zip: </b>29601 | <b>Elevation: </b>966 ft. | <b>Location: </b>34.85, -82.4</p>
+            </section>
+
+
+            <div class="tile-container">
+                <section id="temp" class="tile">
+                <header>
+                    <h2>Temperature</h2>
+                </header>
+                    <p id="current">65&#8457;</p>
+                    <p id="hi">H 72F</p>
+                    <p id="lo">L 51F</p>
+                    <p id="feels">Feels Like 61F</p>
+                </section>
+
+                <section id="wind" class="tile">
+                <header>
+                    <h2>Wind</h2>
+                </header>
+                    <h3 id="mph">8 mph</h3> 
+                    <p><b>Direction: </b> SW</p>
+                    <p><b>Gusts: </b>8 mph</p>
+                </section>
+
+                <section id="summary" class="tile">
+                 <header>
+                     <h2>Thunderstorms</h2>
+                </header>
+                    <img id="img-sum" src="/weather/images/weather-images/video.png" alt="video summary placeholder">
+                    <p><b>Precipitation: </b> 45</p>
+                </section>
+
+            </div>
+
+
+            <section id="hourly">
+                <h3>Hourly Forecast</h3>
+                <ul>
+                <li>12am: 55F | </li>
+                <li>1am: 55F | </li>
+                <li>2am: 56F | </li>
+                <li>3am: 57F | </li>
+                <li>4am: 57F | </li>
+                <li>5am: 57F | </li>
+                <li>6am: 59F | </li>
+                <li>7am: 59F | </li>
+                <li>8am: 59F | </li>
+                <li>9am: 60F | </li>
+                <li>10am: 61F | </li>
+                <li>11am: 63F | </li>
+                <li>12pm: 64F | </li>
+                <li>1pm: 64F | </li>
+                <li>2pm: 66F | </li>
+                <li>3pm: 69F | </li>
+                <li>4pm: 71F | </li>
+                <li>5pm: 72F | </li>
+                <li>6pm: 71F | </li>
+                <li>7pm: 61F | </li>
+                <li>8pm: 57F | </li>
+                <li>9pm: 55F | </li>
+                <li>10pm: 52F | </li>
+                <li>11pm: 51F | </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>&copy;2018 Weather Site</footer>  
+
+        <!-- weather site javascript functions -->
+
+        <script src="javascript/functions.js"></script>
+
+    </body>
+
+</html>

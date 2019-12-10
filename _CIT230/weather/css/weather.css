@@ -1,0 +1,479 @@
+/* /////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* CSS for Screened Devices 
+Created by Kaylie Kerr
+
+Table of Contents
+1. Fonts and supplementary style sheets
+    1.1 Normalize
+    1.2 Google fonts
+
+2. General Rules that apply to all devices
+    2.1 Styles for the entire page
+    2.2 Site Name
+    2.3 Nav Bar
+    2.4 Location name and info
+    2.5 Tiles
+    2.6 Hourly Forecast
+
+3. Mobile first (specific to small devices)
+    3.1 Nav Bar
+    3.2 Tiles
+    3.3 Hourly Forecast
+    3.4 Footer
+
+4. Large screen styles (media queries)
+    4.1 Site Name
+    4.2 Location name and info
+    4.3 Nav Bar
+    4.4 Tiles
+    4.5 Hourly Forecast
+    4.6 Footer
+
+*/
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 1. Fonts and supplementary style sheets */
+/* 1.1 Normalize /////////////// */
+@import url('normalize.css');
+
+
+/* 1.2 Google fonts /////////////// */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 2. General Rules that apply to all devices */
+/* 2.1 Styles for the entire page /////////////// */
+
+html{
+    box-sizing: border-box;
+    }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+    }
+
+body{
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size: 20px;
+    }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: sansita,  sans-serif;
+    }
+
+img{
+    margin-top: .5em;
+    }
+
+#img-sum{
+     max-width: 200px;
+    }
+
+.hide{
+    display: none;
+    }
+
+
+/* 2.2 Site Name /////////////// */
+
+#page-header p{
+    font-size: 1.3em;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+#site-logo{
+  margin: 15px 0 0 15px;
+  }
+
+.site-brand {
+  font-style: italic;
+  margin: 15px 0 0 10px;
+  }
+
+#footer-image {
+    width: 8%;
+}
+
+
+/* 2.3 Nav bar /////////////// */
+
+nav ul{
+    list-style: none;
+    font-size: .7em;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    }
+
+nav li{
+    padding: 12px 4px;
+    }
+
+nav li a{
+    text-decoration: none;
+    }
+
+
+/* 2.4 Location name and info /////////////// */
+
+#loc-name{
+    margin: 5px 0 0 15px;
+    }
+
+#loc-info{
+    font-size: .57em;
+    margin: 20px;
+    }
+
+
+/* 2.5 Tiles /////////////// */
+
+#tile-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+#tile-container{
+    margin: 25px;
+    }
+
+.tile{
+    background-color: rgba(200,200,200,.6);
+    margin: .7em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    }
+
+#current{
+    font-size: 4.2em;
+    margin-bottom: 0;
+    margin-top: .2em;
+    }
+
+#hi, #lo{
+    display: inline;
+    padding: 5px;
+    margin: 0;
+    }
+
+#hi{
+    color: red;
+    }
+
+#lo{
+    color: blue;
+    }
+
+#feels{
+    margin: 4px auto 30px auto;
+    }
+
+#wind p{
+    font-size: .6em;
+    line-height: 5px;
+    }
+
+#summary h2{
+    margin-bottom: 0;
+    }
+
+#summary p{
+    font-size: .6em;
+    line-height: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#dial{
+    width: 150px;
+    height: 150px;
+    background: no-repeat center/85% url(/weather/images/weather-images/wind-pointer.png);
+    z-index: 100;
+    margin: -.6em auto -112px;    
+}
+
+#wind-info{
+    position: relative;
+    margin-bottom: 3.5em;
+}
+
+
+
+/* 2.6 Hourly Forecast /////////////// */
+
+#hourly{
+    background-color:  white;
+    border: 1px solid;
+    border-radius: 15px;
+    }
+
+#hourly ul{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items: center;
+    list-style: none;
+    padding: .15em;
+    height: 40px;
+    }
+
+#hourly ul li{
+    flex: 0 0 auto;
+    padding: 0 .25em;
+    }
+
+
+
+
+
+/* 2.7 Dial /////////////// */
+
+.n {
+    transform: rotate(0deg);
+}
+
+.e {
+    transform: rotate(90deg);
+}
+
+.s {
+    transform: rotate(180deg);
+}
+
+.w {
+    transform: rotate(270deg);
+}
+
+.ne {
+    transform: rotate(45deg);
+}
+
+.se {
+    transform: rotate(135deg);
+}
+
+.sw {
+    transform: rotate(225deg);
+}
+
+.nw {
+    transform: rotate(315deg);
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 3. Mobile first (specific to small devices) */
+/* 3.1 Nav Bar /////////////// */
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border: 1px solid;
+    width: 100%;
+    }
+
+
+/* 3.2 Tiles /////////////// */
+
+#temp header {
+    display: none;
+    }
+
+#wind header {
+    display: none;
+    }
+
+/* 3.3 Hourly Forecast /////////////// */
+
+#hourly{
+    width: 72%;
+    margin: .7em auto;
+    }
+
+#hourly h3{
+    margin: 10px 15px;
+    }
+
+#hourly ul{
+    margin: 5px 10px;
+    }
+
+
+/* 3.4 Footer /////////////// */
+
+footer{
+    margin: 30px 0 3em 15px;
+    }
+
+
+/* 3.5 Background pictures for summary */
+
+.clear {
+    background-image: url("/weather/images/resized/clear.jpg");
+   }
+
+.cloudy {
+    background-image: url("/weather/images/resized/clouds.jpg");
+   }
+
+.fog {
+    background-image: url("/weather/images/resized/fog.jpg");
+   }
+
+.rain {
+    background-image: url("/weather/images/resized/rain.jpg");
+   }
+
+.snow {
+    background-image: url("/weather/images/resized/snow.jpg");
+   }
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* 4. Large screen styles (media queries) */
+
+@media only screen AND (min-width: 768px){
+
+/* 4.1 Site Name /////////////// */
+
+    #site-logo{
+        margin: 15px 0 0 45px;
+        }
+
+    .site-brand{
+        margin: 15px 0 0 10px;
+        }
+
+
+/* 4.2 Location name and info /////////////// */
+
+    #loc-name{
+        margin: 5px 0 0 45px;
+        }
+        
+    #loc-info{
+        margin: 5px 0 0 50px;
+        }
+
+
+/* 4.3 Nav Bar /////////////// */
+
+    nav {
+        position: relative;
+        width: 80%;
+        margin: 15px 45px;
+        }
+
+    nav ul{
+        justify-content: flex-start;
+        }
+
+    nav li{
+        padding: 15px;
+        }
+
+    #franklin-link{
+        border-left: 1px solid;
+        }
+
+
+/* 4.4 Tiles /////////////// */
+
+    #tile-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+    .tile{
+        width: 30%;
+        }
+
+    #temp header{
+        display: inline;
+        }
+
+    #wind header{
+        display: inline;
+        }
+
+    #dial{
+        margin: -.6em auto 35px;
+        max-width: 100%;
+    }
+
+    #wind-info{
+        margin-bottom: -2.5em;
+        top: -41%;
+    }
+
+
+/* 4.5 Hourly Forecast /////////////// */
+
+    #hourly{
+        width: 93%;
+        margin: auto;
+        }
+
+
+/* 4.6 Footer /////////////// */
+
+    footer{
+        margin: 30px 0 5em 45px;
+        }
+
+    }
+
+
+/* 3.5 Background pictures for summary */
+
+.clear {
+    background-image: url("/weather/images/resized/clear-large.jpg");
+   }
+
+.cloudy {
+    background-image: url("/weather/images/resized/clouds-large.jpg");
+   }
+
+.fog {
+    background-image: url("/weather/images/resized/fog-large.jpg");
+   }
+
+.rain {
+    background-image: url("/weather/images/resized/rain-large.jpg");
+   }
+
+.snow {
+    background-image: url("/weather/images/resized/snow-large.jpg");
+   }
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////// */
